@@ -11,8 +11,6 @@ Original file is located at
 https://towardsdatascience.com/how-to-build-a-simple-machine-learning-web-app-in-python-68a45a0e0291
 """
 
-#!pip install streamlit
-
 import streamlit as st
 import pandas as pd
 from sklearn import datasets
@@ -20,19 +18,6 @@ from sklearn.ensemble import RandomForestClassifier
 import pickle
 import numpy as np
 
-# cargamos datos y hacemos el modelo
-# activarlo para generar el pkl, o desactivarlo si ya está creado
-'''
-iris = datasets.load_iris()
-X = iris.data
-y = iris.target
-
-clf = RandomForestClassifier()
-clf.fit(X, y)
-
-# guardamos el modelo en pickle
-pickle.dump(clf, open('model_RFC.pkl','wb'))
-'''
 
 # entorno streamlit
 st.write("""
